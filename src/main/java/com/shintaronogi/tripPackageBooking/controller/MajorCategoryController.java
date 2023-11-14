@@ -1,6 +1,6 @@
 package com.shintaronogi.tripPackageBooking.controller;
 
-import com.shintaronogi.tripPackageBooking.dto.MajorCategoryDto;
+import com.shintaronogi.tripPackageBooking.model.dto.MajorCategoryDto;
 import com.shintaronogi.tripPackageBooking.service.MajorCategoryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

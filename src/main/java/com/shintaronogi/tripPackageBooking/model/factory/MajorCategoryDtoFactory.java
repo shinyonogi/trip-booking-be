@@ -1,7 +1,7 @@
-package com.shintaronogi.tripPackageBooking.factory;
+package com.shintaronogi.tripPackageBooking.model.factory;
 
-import com.shintaronogi.tripPackageBooking.dto.MajorCategoryDto;
-import com.shintaronogi.tripPackageBooking.entity.MajorCategory;
+import com.shintaronogi.tripPackageBooking.model.dto.MajorCategoryDto;
+import com.shintaronogi.tripPackageBooking.model.entity.MajorCategory;
 
 public class MajorCategoryDtoFactory {
 

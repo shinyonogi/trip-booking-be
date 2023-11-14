@@ -1,6 +1,6 @@
 package com.shintaronogi.tripPackageBooking.controller;
 
-import com.shintaronogi.tripPackageBooking.dto.CourseDetailDto;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseDetailDto;
 import com.shintaronogi.tripPackageBooking.service.CourseService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

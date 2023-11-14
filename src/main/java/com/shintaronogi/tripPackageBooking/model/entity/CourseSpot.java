@@ -1,4 +1,4 @@
-package com.shintaronogi.tripPackageBooking.entity;
+package com.shintaronogi.tripPackageBooking.model.entity;
 
 import jakarta.persistence.*;
 

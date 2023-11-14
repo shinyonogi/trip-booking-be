@@ -1,6 +1,6 @@
-package com.shintaronogi.tripPackageBooking.repository;
+package com.shintaronogi.tripPackageBooking.model.repository;
 
-import com.shintaronogi.tripPackageBooking.entity.CourseCategory;
+import com.shintaronogi.tripPackageBooking.model.entity.CourseCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

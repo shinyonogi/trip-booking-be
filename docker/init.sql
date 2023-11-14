@@ -3,6 +3,9 @@ CREATE SEQUENCE course_category_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE course_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE spot_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE course_spot_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE restaurant_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE meal_option_seq START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE restaurant_meal_seq START WITH 1 INCREMENT BY 1;
 
 --Create
 CREATE TABLE major_categories (
@@ -36,6 +39,26 @@ CREATE TABLE courses_spots (
     id BIGINT PRIMARY KEY DEFAULT nextval('course_spot_seq'),
     course_id BIGINT REFERENCES courses(id),
     spot_id BIGINT REFERENCES spots(id)
+);
+
+CREATE TABLE restaurants (
+    id BIGINT PRIMARY KEY DEFAULT nextval('restaurant_seq'),
+    name VARCHAR(100),
+    description VARCHAR(255),
+    location VARCHAR(255),
+    ratings float
+);
+
+CREATE TABLE meal_options (
+    id BIGINT PRIMARY KEY DEFAULT nextval('meal_option_seq'),
+    name VARCHAR(100),
+    description VARCHAR(255)
+);
+
+CREATE TABLE restaurant_meals (
+    id BIGINT PRIMARY KEY DEFAULT nextval('restaurant_meal_seq'),
+    restaurant_id BIGINT REFERENCES restaurants(id),
+    meal_option_id BIGINT REFERENCES meal_options(id)
 );
 
 -- Insert

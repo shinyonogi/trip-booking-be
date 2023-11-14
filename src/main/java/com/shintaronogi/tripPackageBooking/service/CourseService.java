@@ -1,15 +1,15 @@
 package com.shintaronogi.tripPackageBooking.service;
 
-import com.shintaronogi.tripPackageBooking.builder.CourseDtoBuilder;
-import com.shintaronogi.tripPackageBooking.builder.SpotDtoBuilder;
-import com.shintaronogi.tripPackageBooking.dto.CourseDetailDto;
-import com.shintaronogi.tripPackageBooking.dto.CourseDto;
-import com.shintaronogi.tripPackageBooking.dto.SpotDto;
-import com.shintaronogi.tripPackageBooking.entity.Course;
-import com.shintaronogi.tripPackageBooking.entity.Spot;
-import com.shintaronogi.tripPackageBooking.factory.CourseDetailDtoFactory;
-import com.shintaronogi.tripPackageBooking.repository.CourseRepository;
-import com.shintaronogi.tripPackageBooking.repository.SpotRepository;
+import com.shintaronogi.tripPackageBooking.model.builder.CourseDtoBuilder;
+import com.shintaronogi.tripPackageBooking.model.builder.SpotDtoBuilder;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseDetailDto;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseDto;
+import com.shintaronogi.tripPackageBooking.model.dto.SpotDto;
+import com.shintaronogi.tripPackageBooking.model.entity.Course;
+import com.shintaronogi.tripPackageBooking.model.entity.Spot;
+import com.shintaronogi.tripPackageBooking.model.factory.CourseDetailDtoFactory;
+import com.shintaronogi.tripPackageBooking.model.repository.CourseRepository;
+import com.shintaronogi.tripPackageBooking.model.repository.SpotRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,6 +1,6 @@
-package com.shintaronogi.tripPackageBooking.builder;
+package com.shintaronogi.tripPackageBooking.model.builder;
 
-import com.shintaronogi.tripPackageBooking.dto.SpotDto;
+import com.shintaronogi.tripPackageBooking.model.dto.SpotDto;
 
 public class SpotDtoBuilder {
 

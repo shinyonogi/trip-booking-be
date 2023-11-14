@@ -1,9 +1,9 @@
-package com.shintaronogi.tripPackageBooking.builder;
+package com.shintaronogi.tripPackageBooking.model.builder;
 
-import com.shintaronogi.tripPackageBooking.dto.CourseCategoryDto;
-import com.shintaronogi.tripPackageBooking.dto.CourseDto;
-import com.shintaronogi.tripPackageBooking.entity.CourseCategory;
-import com.shintaronogi.tripPackageBooking.factory.CourseCategoryDtoFactory;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseCategoryDto;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseDto;
+import com.shintaronogi.tripPackageBooking.model.entity.CourseCategory;
+import com.shintaronogi.tripPackageBooking.model.factory.CourseCategoryDtoFactory;
 
 import java.math.BigDecimal;
 

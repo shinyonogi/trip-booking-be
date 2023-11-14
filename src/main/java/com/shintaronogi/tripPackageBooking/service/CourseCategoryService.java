@@ -1,9 +1,9 @@
 package com.shintaronogi.tripPackageBooking.service;
 
-import com.shintaronogi.tripPackageBooking.dto.CourseCategoryDto;
-import com.shintaronogi.tripPackageBooking.entity.CourseCategory;
-import com.shintaronogi.tripPackageBooking.factory.CourseCategoryDtoFactory;
-import com.shintaronogi.tripPackageBooking.repository.CourseCategoryRepository;
+import com.shintaronogi.tripPackageBooking.model.dto.CourseCategoryDto;
+import com.shintaronogi.tripPackageBooking.model.entity.CourseCategory;
+import com.shintaronogi.tripPackageBooking.model.factory.CourseCategoryDtoFactory;
+import com.shintaronogi.tripPackageBooking.model.repository.CourseCategoryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

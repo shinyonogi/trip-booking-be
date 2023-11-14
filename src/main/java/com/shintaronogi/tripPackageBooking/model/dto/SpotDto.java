@@ -1,4 +1,4 @@
-package com.shintaronogi.tripPackageBooking.dto;
+package com.shintaronogi.tripPackageBooking.model.dto;
 
 public class SpotDto {
 

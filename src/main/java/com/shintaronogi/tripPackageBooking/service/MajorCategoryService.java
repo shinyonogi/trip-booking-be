@@ -1,9 +1,9 @@
 package com.shintaronogi.tripPackageBooking.service;
 
-import com.shintaronogi.tripPackageBooking.dto.MajorCategoryDto;
-import com.shintaronogi.tripPackageBooking.entity.MajorCategory;
-import com.shintaronogi.tripPackageBooking.factory.MajorCategoryDtoFactory;
-import com.shintaronogi.tripPackageBooking.repository.MajorCategoryRepository;
+import com.shintaronogi.tripPackageBooking.model.dto.MajorCategoryDto;
+import com.shintaronogi.tripPackageBooking.model.entity.MajorCategory;
+import com.shintaronogi.tripPackageBooking.model.factory.MajorCategoryDtoFactory;
+import com.shintaronogi.tripPackageBooking.model.repository.MajorCategoryRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
