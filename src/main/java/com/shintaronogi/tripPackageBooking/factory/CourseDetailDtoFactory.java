@@ -8,9 +8,6 @@ import java.util.List;
 
 public class CourseDetailDtoFactory {
 
-    private CourseDto course;
-    private List<SpotDto> spots;
-
     public static CourseDetailDto createCourseDetailDto(CourseDto course, List<SpotDto> spots) {
         return new CourseDetailDto(course, spots);
     }

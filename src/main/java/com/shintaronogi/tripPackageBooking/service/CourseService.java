@@ -11,6 +11,7 @@ import com.shintaronogi.tripPackageBooking.factory.CourseDetailDtoFactory;
 import com.shintaronogi.tripPackageBooking.repository.CourseRepository;
 import com.shintaronogi.tripPackageBooking.repository.SpotRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,7 @@ public class CourseService {
         this.spotRepository = spotRepository;
     }
 
+    @Transactional(readOnly = true)
     public List<CourseDetailDto> getCourseDetailsByCategory(Long categoryId) {
         List<Course> courses = courseRepository.findByCourseCategoryId(categoryId);
         List<CourseDetailDto> courseDetails = new ArrayList<>();
