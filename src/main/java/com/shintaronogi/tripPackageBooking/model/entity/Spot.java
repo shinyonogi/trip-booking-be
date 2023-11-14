@@ -13,8 +13,8 @@ public class Spot {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
-    @OneToMany(mappedBy = "spot")
-    Set<CoursesSpots> coursesSpotsSet;
+    @OneToMany(mappedBy = "spot", fetch = FetchType.LAZY)
+    Set<CourseSpot> courseSpotSet;
 
     @Column(name = "name", nullable = false)
     private String name;

@@ -13,8 +13,12 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
-    @OneToMany(mappedBy = "course")
-    Set<CoursesSpots> coursesSpots;
+    @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
+    Set<CourseSpot> coursesSpots;
+
+    @ManyToOne
+    @JoinColumn(name = "course_category_id")
+    CourseCategory courseCategory;
 
     @Column(name = "name")
     private String name;

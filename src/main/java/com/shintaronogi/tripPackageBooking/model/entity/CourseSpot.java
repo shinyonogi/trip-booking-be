@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "courses_spots")
-public class CoursesSpots {
+public class CourseSpot {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -19,9 +19,9 @@ public class CoursesSpots {
     @JoinColumn(name = "spot_id")
     Spot spot;
 
-    public CoursesSpots() {}
+    public CourseSpot() {}
 
-    public CoursesSpots(Course course, Spot spot) {
+    public CourseSpot(Course course, Spot spot) {
         this.course = course;
         this.spot = spot;
     }

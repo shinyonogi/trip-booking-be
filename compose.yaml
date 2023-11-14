@@ -1,6 +1,8 @@
 services:
   postgres:
     image: 'postgres:latest'
+    volumes:
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       - 'POSTGRES_DB=mydatabase'
       - 'POSTGRES_PASSWORD=secret'
