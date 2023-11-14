@@ -1,6 +1,6 @@
 package com.shintaronogi.tripPackageBooking.repository;
 
-import com.shintaronogi.tripPackageBooking.model.entity.Spot;
+import com.shintaronogi.tripPackageBooking.entity.Spot;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

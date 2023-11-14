@@ -1,4 +1,4 @@
-package com.shintaronogi.tripPackageBooking.model.entity;
+package com.shintaronogi.tripPackageBooking.entity;
 
 import jakarta.persistence.*;
 
@@ -31,6 +31,45 @@ public class Course {
 
     @Column(name = "price")
     private BigDecimal price;
+
+    public Course() {}
+
+    public Course(Set<CourseSpot> coursesSpots, CourseCategory courseCategory, String name, float duration, int maxSpots, BigDecimal price) {
+        this.coursesSpots = coursesSpots;
+        this.courseCategory = courseCategory;
+        this.name = name;
+        this.duration = duration;
+        this.maxSpots = maxSpots;
+        this.price = price;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public Set<CourseSpot> getCoursesSpots() {
+        return coursesSpots;
+    }
+
+    public CourseCategory getCourseCategory() {
+        return courseCategory;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public float getDuration() {
+        return duration;
+    }
+
+    public int getMaxSpots() {
+        return maxSpots;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
 
     @Override
     public String toString() {
