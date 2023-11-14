@@ -27,4 +27,12 @@ public class CourseCategoryDto {
     public void setName(String name) {
         this.name = name;
     }
+
+    public MajorCategoryDto getMajorCategory() {
+        return majorCategory;
+    }
+
+    public void setMajorCategory(MajorCategoryDto majorCategory) {
+        this.majorCategory = majorCategory;
+    }
 }
