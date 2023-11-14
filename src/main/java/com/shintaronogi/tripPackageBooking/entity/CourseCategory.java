@@ -15,13 +15,34 @@ public class CourseCategory {
     @OneToMany(mappedBy = "courseCategory", fetch = FetchType.LAZY)
     Set<Course> courseSet;
 
+    @ManyToOne
+    @JoinColumn(name = "major_category_id")
+    MajorCategory majorCategory;
+
     @Column(name = "name", nullable = false)
     private String name;
 
     public CourseCategory() {}
 
-    public CourseCategory(String name) {
+    public CourseCategory(String name, MajorCategory majorCategory) {
         this.name = name;
+        this.majorCategory = majorCategory;
+    }
+
+    public Set<Course> getCourseSet() {
+        return courseSet;
+    }
+
+    public void setCourseSet(Set<Course> courseSet) {
+        this.courseSet = courseSet;
+    }
+
+    public MajorCategory getMajorCategory() {
+        return majorCategory;
+    }
+
+    public void setMajorCategory(MajorCategory majorCategory) {
+        this.majorCategory = majorCategory;
     }
 
     public long getId() {

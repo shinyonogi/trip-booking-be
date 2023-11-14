@@ -1,15 +1,13 @@
 package com.shintaronogi.tripPackageBooking.dto;
 
-public class CourseCategoryDto {
+public class MajorCategoryDto {
 
     private Long id;
     private String name;
-    private MajorCategoryDto majorCategory;
 
-    public CourseCategoryDto(Long id, String name, MajorCategoryDto majorCategory) {
+    public MajorCategoryDto(Long id, String name) {
         this.id = id;
         this.name = name;
-        this.majorCategory = majorCategory;
     }
 
     public Long getId() {

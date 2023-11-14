@@ -6,6 +6,10 @@ import com.shintaronogi.tripPackageBooking.entity.CourseCategory;
 public class CourseCategoryDtoFactory {
 
     public static CourseCategoryDto createCourseCategoryDto(CourseCategory courseCategory) {
-        return new CourseCategoryDto(courseCategory.getId(), courseCategory.getName());
+        return new CourseCategoryDto(
+                courseCategory.getId(),
+                courseCategory.getName(),
+                MajorCategoryDtoFactory.createMajorCategoryDto(courseCategory.getMajorCategory())
+        );
     }
 }

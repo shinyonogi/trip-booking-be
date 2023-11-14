@@ -1,11 +1,18 @@
+CREATE SEQUENCE major_category_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE course_category_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE course_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE spot_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE course_spot_seq START WITH 1 INCREMENT BY 1;
 
 --Create
+CREATE TABLE major_categories (
+    id BIGINT PRIMARY KEY DEFAULT nextval('major_category_seq'),
+    name VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE course_categories (
     id BIGINT PRIMARY KEY DEFAULT nextval('course_category_seq'),
+    major_category_id BIGINT REFERENCES  major_categories(id),
     name VARCHAR(255) NOT NULL
 );
 
@@ -32,7 +39,9 @@ CREATE TABLE courses_spots (
 );
 
 -- Insert
-INSERT INTO course_categories (name) VALUES ('世界遺産巡りコース'), ('京の王道・人気コース'), ('雅な京都・老舗巡り');
+INSERT INTO major_categories (name) VALUES ('おすすめコース'), ('ラグジュアリーコース');
+
+INSERT INTO course_categories (name, major_category_id) VALUES ('世界遺産巡りコース', 1), ('京の王道・人気コース', 1), ('雅な京都・老舗巡り', 1);
 
 INSERT INTO courses (course_category_id, name, duration, max_spots, price) VALUES
 (1, '4時間コース', 4, 3, 5000),
